@@ -33,8 +33,8 @@ function targz() {
 	else
 		cmd="gzip"
 	fi
-	local tmpFile="${1}.tar"
-	tar -cvf "${tmpFile}" "${1}" &&
+	local tmpFile="${@}.tar"
+	tar -cvf "${tmpFile}" "${@}" &&
 	"${cmd}" "${tmpFile}" &&
 	rm "${tmpFile}" 2> /dev/null &&
 	echo "${tmpFile}.gz created successfully (compressed using \`${cmd}\`)."
