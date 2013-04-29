@@ -9,6 +9,12 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
+# init z
+. `brew --prefix`/etc/profile.d/z.sh
+
+# init rvm
+source ~/.rvm/scripts/rvm
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
