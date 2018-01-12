@@ -2,11 +2,17 @@
 export PATH="$HOME/bin:$PATH"
 
 # Java home
-export JAVA_HOME=`/usr/libexec/java_home`
+# export JAVA_HOME=`/usr/libexec/java_home`
 
 # Go
 export GOPATH=~/Repos/Go
 export PATH="$GOPATH/bin:$PATH"
+
+# Postgres
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# Pythonpath
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
